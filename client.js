@@ -22,15 +22,6 @@ const connect = function () {
 
   conn.on("connect", () => {
     conn.write("Name: ZEZ");
-    setInterval(() => {
-      conn.write("Move: up");
-      // setTimeout(() => {
-      //   conn.write("Move: left");
-      //   setTimeout(() => {
-      //     conn.write("Move: left");
-      //   }, 600);
-      // }, 550);
-    }, 50);
   });
 
   return conn;
