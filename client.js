@@ -6,8 +6,8 @@ const server = net.createServer();
  */
 const connect = function () {
   const conn = net.createConnection({
-    host: "192.168.1.66",
-    port: 50541,
+    host: "135.23.222.131",
+    port: 50542,
   });
   // interpret incoming data as text
   conn.setEncoding("utf8");
@@ -18,9 +18,6 @@ const connect = function () {
 
   conn.on("connect", () => {
     console.log("Game Connected");
-  });
-
-  conn.on("connect", () => {
     conn.write("Name: ZEZ");
   });
 
